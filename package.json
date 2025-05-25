@@ -1,19 +1,25 @@
 {
-  "name": "health",
-  "version": "1.0.0",
-  "description": "My Health website. Interactive and multiuser.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "web",
-    "health",
-    "interactive"
-  ],
-  "author": "Javier Cuenca",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^5.1.0"
-  }
+    "name": "health",
+    "version": "1.0.0",
+    "description": "My Health website. Interactive and multiuser.",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "cross-env PORT=3000 DB_NAME=healthweb DB_USER=root node backend/server.js"
+    },
+    "keywords": [
+        "web",
+        "health",
+        "interactive"
+    ],
+    "author": "Javier Cuenca",
+    "license": "ISC",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "express": "^5.1.0",
+        "mysql2": "^3.14.1"
+    },
+    "devDependencies": {
+        "cross-env": "^7.0.3"
+    }
 }
