@@ -1,0 +1,19 @@
+{
+  "name": "health",
+  "version": "1.0.0",
+  "description": "My Health website. Interactive and multiuser.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "web",
+    "health",
+    "interactive"
+  ],
+  "author": "Javier Cuenca",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
