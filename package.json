@@ -5,7 +5,8 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "cross-env PORT=3000 DB_PORT=3307 DB_NAME=healthweb DB_USER=root node backend/server.js"
+        "start-w": "cross-env PORT=3000 DB_PORT=3307 DB_NAME=healthweb DB_USER=root node backend/server.js",
+        "start": "node --env-file=.env backend/server.js"
     },
     "keywords": [
         "web",
@@ -15,9 +16,13 @@
     "author": "Javier Cuenca",
     "license": "ISC",
     "dependencies": {
+        "bcrypt": "^6.0.0",
         "cors": "^2.8.5",
-        "express": "^5.1.0",
-        "mysql2": "^3.14.1"
+        "express": "^4.21.2",
+        "jsonwebtoken": "^9.0.2",
+        "mysql2": "^3.14.1",
+        "react": "^19.1.0",
+        "react-dom": "^19.1.0"
     },
     "devDependencies": {
         "cross-env": "^7.0.3"
