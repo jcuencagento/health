@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
+import { Box } from '@chakra-ui/react';
 import LandingPage from './components/LandingPage';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Home from './components/Home';
 
 function App() {
     const [user, setUser] = useState(null);
@@ -9,9 +13,12 @@ function App() {
     }
 
     return (
-        <div style={{ padding: '2rem', textAlign: 'center' }}>
-            <h1>Bienvenido, {user.username}</h1>
-            {/* Aquí vendrán las 3 secciones de info única */}
+        <div>
+            <Header />
+            <Box as="main" flex="1" p={6} textAlign="center">
+                <Home user={user} />
+            </Box>
+            <Footer />
         </div>
     );
 }
